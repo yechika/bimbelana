@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.45" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>#BimbeLana</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -20,7 +20,7 @@
       }
 
       body {
-        font-family: 'Single Day', cursive;
+        font-family: "Single Day", cursive;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -64,6 +64,38 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 768px) {
+          body {
+            font-size: 16px; 
+          }
+
+          .container {
+            width: 90%; 
+            margin-top: 20px; 
+          }
+
+          .horizontal-text {
+            flex-wrap: wrap; 
+            justify-content: center;
+          }
+
+          .horizontal-text p {
+            margin-right: 0.5rem; 
+            margin-bottom: 0.5rem;
+          }
+
+          .collapse-title {
+            font-size: 1.5rem; 
+            margin-bottom: 0.5rem; 
+            word-wrap: break-word; 
+          }
+
+          .btn1 {
+            text-align: center;
+            margin-top: 1rem;
+          }
+        }
       }
     </style>
   </head>
@@ -267,10 +299,14 @@
         <div class="collapse bg-base-200">
           <input type="checkbox" />
           <div class="collapse-title text-xl font-medium">
-            Sesi 5: Terjemahin 아우렐 아라나 찬틱, 라나 온리, 카카우 마우
-            스라투스 비치 욕
+            Sesi 5: Terjemahin 👇
           </div>
           <div class="collapse-content">
+            <div class="horizontal-texts">
+                <h1>
+                    아우렐 아라나 찬틱, 라나 온리, 카카우 마우
+                    스라투스 비치 욕
+                </h1>
             <div class="horizontal-texts">
               <p>
                 ==============================================================================================================
